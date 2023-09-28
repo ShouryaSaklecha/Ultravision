@@ -1,8 +1,8 @@
 const int trigPin = 4;
 const int echoPin = 5;
-const int state_1 = 1;
-const int state_2 = 2;
-const int state_3 = 3;
+const int state_1 = 25;
+const int state_2 = 50;
+const int state_3 = 75;
 long duration;
 int distance;
 

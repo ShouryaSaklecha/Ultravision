@@ -23,7 +23,7 @@ int get_state(){
 * a numerical value to the state
 */
   //Switches input here: 
-  return state_3;
+  return 3;
 }
 
 void pick_state(int got_state){
@@ -32,13 +32,13 @@ void pick_state(int got_state){
 * This function uses that numeric value to assign a state to the device
 * for the states, see distance_states.ino
 */
-  if(got_state == state_1){
+  if(got_state == 1){
     state_is_one(distance);
   }
-  else if(got_state == state_2){
+  else if(got_state == 2){
     state_is_two(distance);
   }
-  else if(got_state == state_3){
+  else if(got_state == 3){
     state_is_three(distance);
   }
 }

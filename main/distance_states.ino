@@ -4,7 +4,7 @@ void state_is_one(int distance){
 * sends a pulse with waittime that reduces with time
 * ignores other distances
 */
-  if(distance <= 25){
+  if(distance <= state_1){
     pulse_generator(1,distance*10,100);
   }
 }
@@ -17,10 +17,10 @@ void state_is_two(int distance){
 * Automatically goes back to 2m state if distances is > 1m. 
 * Ignores 3m. 
 */
-  if(distance <= 25){
+  if(distance <= state_1){
     state_is_one(distance);
   }
-  else if(distance < 50){
+  else if(distance < state_2){
     pulse_generator(2,100,100);
     delay(distance*10);
   }
@@ -34,13 +34,13 @@ void state_is_three(int distance){
 * if distances is less than 2m, it shifts control to 2m state.
 * Automatically goes back to 3m state if distances is > 2m. 
 */
-  if(distance <= 25){
+  if(distance <= state_1){
     state_is_one(distance);
   }
-  else if(distance <= 50 && distance > 25){
+  else if(distance <= state_2 && distance > state_1){
     state_is_two(distance);
   }
-  else if(distance < 100){
+  else if(distance < state_3){
     pulse_generator(3,100,100);
     delay(distance*10);
   }
