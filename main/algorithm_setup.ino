@@ -23,7 +23,16 @@ int get_state(){
 * a numerical value to the state
 */
   //Switches input here: 
-  return 3;
+  int buttonState1 = digitalRead(switchPin1);
+  int buttonState2 = digitalRead(switchPin1);
+  int buttonState3 = digitalRead(switchPin1);
+  if(buttonState2){
+    return 2;
+  }
+  else if(buttonState3){
+    return 3;
+  }
+  else return 1; //default state is always 1m
 }
 
 void pick_state(int got_state){
@@ -33,12 +42,15 @@ void pick_state(int got_state){
 * for the states, see distance_states.ino
 */
   if(got_state == 1){
+    Serial.print("State 1 \n");
     state_is_one(distance);
   }
-  else if(got_state == 2){
+  else if (got_state == 2) {
+    Serial.print("State two \n");
     state_is_two(distance);
   }
-  else if(got_state == 3){
+  else if (got_state == 3) {
+    Serial.print("State three \n");
     state_is_three(distance);
   }
 }

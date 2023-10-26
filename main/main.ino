@@ -1,8 +1,11 @@
 const int trigPin = 4;
 const int echoPin = 5;
-const int state_1 = 25;
-const int state_2 = 50;
-const int state_3 = 75;
+const int state_1 = 20;
+const int state_2 = 60;
+const int state_3 = 600;
+const int switchPin1 = 7;
+const int switchPin2 = 8;
+const int switchPin3 = 9;
 long duration;
 int distance;
 
@@ -19,6 +22,9 @@ void setup() {
   pinMode(3, OUTPUT);
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
+  pinMode(switchPin1, INPUT);
+  pinMode(switchPin2, INPUT);
+  pinMode(switchPin3, INPUT);
 
   // A basic sequence to indicate circuit is initialised:
   pulse_generator(1,200,200);
@@ -34,9 +40,8 @@ void loop() {
   delayMicroseconds(10);
   duration = pulseIn(echoPin, HIGH);
   distance = duration * 0.034/2;
-
-  //Serial.print("Distance: ");
-  //Serial.println(distance);
+  Serial.print("Distance: ");
+  Serial.println(distance);
 
   int got_state = get_state(); // gets a state value from switch (1,2,3)
   pick_state(got_state); // based on the state value, sets the program into the appropriate state
