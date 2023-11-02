@@ -18,14 +18,13 @@ void pulse_generator(int frequency, int waittime, int runtime){
 
 int get_state(){
 /*
-* This is the only INCOMPLETE piece of code
 * This function should use the output from our switch to assign
 * a numerical value to the state
 */
   //Switches input here: 
   int buttonState1 = digitalRead(switchPin1);
-  int buttonState2 = digitalRead(switchPin1);
-  int buttonState3 = digitalRead(switchPin1);
+  int buttonState2 = digitalRead(switchPin2);
+  int buttonState3 = digitalRead(switchPin3);
   if(buttonState2){
     return 2;
   }

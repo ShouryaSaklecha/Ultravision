@@ -1,8 +1,8 @@
 const int trigPin = 4;
 const int echoPin = 5;
-const int state_1 = 20;
-const int state_2 = 60;
-const int state_3 = 600;
+const int state_1_distance = 20;
+const int state_2_distance = 60;
+const int state_3_distance = 600;
 const int switchPin1 = 7;
 const int switchPin2 = 8;
 const int switchPin3 = 9;
