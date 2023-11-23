@@ -1,9 +1,9 @@
 # ultravision
-Ultrasonic Headband Project: ENGG3060
+Ultrasonic Headband Project: ENGG3060 UNSW
 
-This device is designed for John Lee, a person with vision and hearing impairment. 
+This device was designed for John Lee, a person with vision and hearing impairment. We worked with him over six months to design an assistive technology that can detect an object using an ultrasonic sensor, and send haptic feedback indicating this distance by designing a custom pulse algorithm calibrated for John.
 
-Files: 
+Files:
 
 1. Main File: 
 Contains the board initialization and the main loop that runs endlessly. Sets up the sensors and motors and sends a pulse sequence to convey successful setup. 
@@ -13,6 +13,13 @@ Contains code that helps the control flow of the device. Gets data from switches
 
 3. distance_states: 
 Contains all the states and what the device should do when in a particular state.
+
+4. 3060 PCB: All the PCB files with BOM for the project.
+
+Apart from this, you will need: 
+1. HCSR04 sensor
+2. 9V Battery
+3. Vibration motor (10mm)
 
 **Updating Distances:** The program has been optimized to easily change the distance states. Locate the macros on top on the code labelled:
 const int state_1_distance, state_2_distance, state_3_distance. Change their values to your desired value in cm. 
