@@ -23,7 +23,7 @@ Apart from this, you will need:
 1. HCSR04 sensor
 2. 9V Battery
 3. Vibration motor (10mm)
-4. And off course, and Arduino Nano!
+4. And off course, an Arduino Nano!
 
 **Updating Distances:** The program has been optimized to easily change the distance states. Locate the macros on top on the code labelled:
 const int state_1_distance, state_2_distance, state_3_distance. Change their values to your desired value in cm. 
