@@ -14,7 +14,10 @@ Contains code that helps the control flow of the device. Gets data from switches
 3. distance_states: 
 Contains all the states and what the device should do when in a particular state.
 
-4. 3060 PCB: All the PCB files with BOM for the project.
+4. 3060 PCB: All the PCB files with BOM for the project: 
+
+<img width="630" alt="Screenshot 2023-11-23 at 22 46 05" src="https://github.com/ShouryaSaklecha/ultravision/assets/65444247/0c36f3bb-7009-4d8f-af4e-3f8fec7e9418">
+
 
 Apart from this, you will need: 
 1. HCSR04 sensor
