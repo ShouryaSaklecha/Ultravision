@@ -28,3 +28,6 @@ Apart from this, you will need:
 
 **Updating Distances:** The program has been optimized to easily change the distance states. Locate the macros on top on the code labelled:
 const int state_1_distance, state_2_distance, state_3_distance. Change their values to your desired value in cm. 
+
+**Summary Poster:**
+![IMG_4187](https://github.com/ShouryaSaklecha/Ultravision/assets/65444247/891fb090-33ee-4272-b947-9b6421e6822f)
