@@ -1,5 +1,7 @@
 # Ultravision
 **Ultrasonic Headband Project:** ENGG3060 UNSW
+![IMG_4201](https://github.com/ShouryaSaklecha/Ultravision/assets/65444247/562ffd9d-5d52-4eab-95cb-26ddde1cb8dd)
+
 
 This device was designed for John Lee, a person with vision and hearing impairment. We worked with him over six months to design an assistive technology that can detect an object using an ultrasonic sensor, and send haptic feedback indicating this distance by designing a custom pulse algorithm calibrated for John.
 
